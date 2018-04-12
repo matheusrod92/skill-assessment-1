@@ -1,0 +1,137 @@
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+
+  img {
+    margin: 0;
+  }
+
+  .container img{
+    margin-top: 25px;
+  }
+
+  .conteudoCabecalho {
+    height: auto;
+  }
+
+  .conteudoCabecalho .container {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .conteudoCabecalho-logo img {
+    max-width: 96%;
+  }
+
+  .container .conteudoCabecalho-texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: none;
+    padding: 20px;
+  }
+
+  .container .conteudoCabecalho-texto div {
+    order: 1;
+  }
+
+  .container .conteudoCabecalho-texto .conteudoCabecalho-conteudo {
+    order: 0;
+  }
+
+  .conteudoCabecalho-conteudo p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .conteudoCabecalho-conteudo {
+    margin: 0px 10px 0 0;
+    position: static;
+  }
+
+  .conteudoCabecalho-titulo h2 {
+    line-height: 45px;
+    margin: 25px 0 20px 0;
+  }
+
+  .container .conteudoCabecalho-titulo h2 {
+    margin: 20px 0 30px 0;
+  }
+  
+
+  #heroText {
+    margin: 25px 0 20px 0;
+    width: 100%;
+  }
+
+  #heroTextSecond{
+    width: 100%;
+  }
+
+  .conteudoCabecalho-botao {
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    max-width: 50%;
+  }
+
+  .hero {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 20px 20px 50px 20px;
+    height: auto;
+  }
+
+  .text {
+    margin: 30px 0 30px 0;
+    width: 75%;
+    text-align: center;
+  }
+
+  .hero #form {
+    width: 92%;
+    margin: 0 0 15px 0;
+    max-width: 400px;
+  }
+
+  .hero select {
+    width: 92%;
+  }
+
+  .hero input {
+    width: 92%;
+  }
+
+  .hero p {
+    width: 100%;
+  }
+
+  #heroTextBold {
+    margin-top: 18px;
+  }
+
+  .hero textarea {
+    width: 92%;
+  }
+
+  .hero #submit {
+    width: 92%;
+    margin: 10px 0 10px 0px;
+  }
+
+  .obrigado h2 {
+    font-family: neris-light;
+    font-size: 3rem;
+    color: white;
+    margin: 0 0 10px 0;
+  }
+
+  .obrigado h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin: 0 30px;
+  }
+  .conteudoRodape {
+    flex-direction: column;
+  }
+}
