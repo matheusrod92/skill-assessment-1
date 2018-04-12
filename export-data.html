@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Exportar leads</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container-fluid">
+    <!-- Content here -->
+
+    <div class="row">
+      <div class="col-sm-8 offset-sm-2">
+        <form class="form-inline" hidden>
+
+          <div class="form-group mb-2">
+            <label for="inputName" class="sr-only">Nome</label>
+            <input type="text" class="form-control" id="inputName" placeholder="Nome">
+          </div>
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="inputEmail" class="sr-only">E-mail</label>
+            <input type="text" class="form-control" id="inputEmail" placeholder="E-mail">
+          </div>
+          <div class="form-group mx-sm-3 mb-2" hidden>
+            <label for="selectPersona">Persona </label>
+            <select class="form-control" id="selectPersona">
+              <option value="" selected>Todos</option>
+              <option value="0">Contratante</option>
+              <option value="1">Contratado</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-sm-8 offset-sm-2">
+        <div class="card">
+          <div class="card-header">
+            <h2 class="card-title">Leads</h2>
+
+          </div>
+          <div class="card-body">
+
+            <div id="results"></div>
+
+            <div class="row">
+
+              <div class="col-sm-8">
+                <a href="" class="export btn btn-primary">Exportar Leads</a>
+                <a href="" class="export btn btn-primary" hidden>Exportar Validação</a>
+                <a href="" class="export btn btn-primary">Exportar e-mails</a>
+              </div>
+              <div class="col-4" id="pagination"></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-muted">
+          <p id="total-rows"></p>
+          <p id="updated-time"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="js/app/views/Views.js"></script>
+  <script type="text/javascript" src="js/app/views/Table.js"></script>
+  <script type="text/javascript" src="js/app/views/Pagination.js"></script>
+  <script type="text/javascript" src="js/app/models/Export.js"></script>
+  <script type="text/javascript" src="js/app/controllers/Database.js"></script>
+  <script type="text/javascript" src="js/app/controllers/Table.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-database.js"></script>
+
+  <script>
+  	firebase.initializeApp({
+      apiKey: "AIzaSyC9kHRqa_vFseX0_J8_GYQSi92-5OoSMrg",
+      authDomain: "assigment-3-45055.firebaseapp.com",
+      databaseURL: "https://assigment-3-45055.firebaseio.com",
+      projectId: "assigment-3-45055",
+      storageBucket: "",
+      messagingSenderId: "518545836753"
+    });
+    let Table = new TableCtrl();
+  </script>
+
+</body>
+</html>

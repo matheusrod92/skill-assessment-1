@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116702280-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116702280-1');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5QQWF44');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css ">
+    <link rel="stylesheet" type="text/css" href="./css/queries.css ">
+    <!-- Hotjar Tracking Code for http://hrtechrecruta.com.br/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:842004,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+     </script>
+     <!-- End Hotjar Tracking Code for http://hrtechrecruta.com.br/ -->
+    <title>HRTech Recruta</title>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QQWF44"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <img class="logo" src="images/logo_header.png" alt="Logotipo">
+    </header>
+
+    <section class="conteudoCabecalho">
+        <div class="container">
+            <img src="images/Boneco.png" alt="Boneco">
+
+            <div class="conteudoCabecalho-texto">
+                <div class="conteudoCabecalho-titulo">
+                    <h2>
+                        <span>Nós podemos te</span> ajudar!
+                    </h2>
+                    <a class="conteudoCabecalho-botao action-button">Sim, eu quero!</a>
+                </div>
+                <div class="conteudoCabecalho-conteudo">
+                    <p>Você, profissional de <strong>Marketing Digital</strong>, o que acha de ter <strong>processos seletivos</strong> que realmente considerem suas habilidades e testem seus conhecimentos de maneira <strong>justa</strong> e <strong>objetiva</strong>?</p>
+                    <p>E se, <strong>antes</strong> mesmo de ser <strong>entrevistado</strong>, você mesmo tiver consciência de suas habilidades e pontos fortes? Além disso, você receberá dicas para melhorar e se destacar cada vez mais!</p>
+                    <p>Tudo isso <span class="underline"><strong>sem qualquer custo para você!</strong></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="hero" class="hero heroSubmit">
+
+        <div class="text">
+            <p class="heroText">
+                Nós, da HR Tech Recruta, estamos desenvolvendo uma ferramenta para que os processos
+                seletivos em Marketing Digital sejam cada vez mais voltados à real habilidade dos candidatos e
+                os direcionem para as melhores oportunidades do mercado!
+            </p>
+            <p class="heroText">
+                Estamos, ainda, em fase de testes e precisamos de pessoas interessada em nos ajudar nesta
+                importante etapa!
+            </p>
+            <p class="heroText-bold">
+                Podemos contar com você?
+            </p>
+            <p class="heroText">
+                Para participar, é fácil (e bem rapidinho)! É só preencher este formulário aqui do lado com
+                seus dados e em breve enviaremos a você um link para acesso à nossa plataforma, onde você
+                poderá testá-la, conferir sua análise técnica e, de quebra, receber dicas para se preparar para
+                processos seletivos e subir cada vez mais em sua carreira!
+            </p>
+
+        </div>
+        <form id="form" class="topBefore" onsubmit="formController.add(event)">
+            <h2>Vem com a gente!</h2>
+            <input id="name" type="text" placeholder="Nome Completo*" pattern="(.*)\s(.*)" oninvalid="this.setCustomValidity('Favor Inserir Nome Completo')"
+                oninput="setCustomValidity('')" autocomplete='name' required>
+
+            <input id="email" type="email" placeholder="E-Mail*" pattern="(.*)+@(.*)+\.(.*)" oninvalid="this.setCustomValidity('Favor Inserir Email no formato nome@dominio.exemplo')"
+                oninput="setCustomValidity('')" autocomplete='email' required>
+
+            <input id="ocupacao" type="text" placeholder="Ocupação*" required>
+
+            <p id="formText">Conta pra gente um pouco das suas experiências em processos seletivos em marketing digital! O que você acha que poderia melhorar?</p>
+
+            <textarea id="questionFirst" type="text" name="leadsFirt" required></textarea>
+            <input class="action-button" id="submit" type="submit" value="ENVIAR">
+        </form>
+    </main>
+
+    <footer class="conteudoRodape">
+        <small>Copyright © 2018 | HR TECH | All Rights Reserved</small>
+        <small>
+            <a href="#">Terms of service</a>|
+            <a href="#">Privacy Policy</a>
+        </small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="js/app/models/Form.js"></script>
+    <script src="js/app/controllers/FormController.js"></script>
+    <script src="js/app/models/FormList.js"></script>
+    <script src="js/app/index.js"></script>
+    <script>
+        let formController = new FormController();
+    </script>
+</body>
+
+</html>
