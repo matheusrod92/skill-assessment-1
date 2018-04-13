@@ -7,7 +7,6 @@ class FormController {
         this._inputName = $('#name');
         this._inputEmail = $('#email');
         this._inputOcupacao = $('#ocupacao');
-        this._inputQuestionFirst = $('#questionFirst');
         this._currentDate = new Date().toLocaleString();
         this._formList = new FormList();
     }
@@ -25,7 +24,6 @@ class FormController {
             this._inputName.value,
             this._inputEmail.value,
             this._inputOcupacao.value,
-            this._inputQuestionFirst.value,
             this._currentDate
         );
     }
