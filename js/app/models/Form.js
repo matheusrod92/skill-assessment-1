@@ -1,12 +1,11 @@
 //FORM CONSTRUCTOR AND METHODS
 class Form {
     
-    constructor(name, email, ocupacao, questionFirst, currentDate) {
+    constructor(name, email, ocupacao, currentDate) {
 
         this._name = name;
         this._email = email;
         this._ocupacao = ocupacao;
-        this._questionFirst = questionFirst;
         this._currentdate = currentDate;
         Object.freeze(this);
     }
@@ -23,10 +22,6 @@ class Form {
 
     get ocupacao() {
         return this._ocupacao;
-    }
-
-    get leadsFirst() {
-        return this._questionFirst;
     }
 
     get currentdate () {
