@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery'; 
 
 @Component({
   selector: 'app-menu',
@@ -9,13 +10,11 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
-  // mostraFormLogin() {
-  //   //to-do: fazer o js funcionar para mostar o modal
+  mostraFormLogin() {
+  //to-do: fazer o js funcionar para mostar o modal
     
-  //   // $('#myModal').on('shown.bs.modal', function () {
-  //   //   $('#myInput').trigger('focus')
-  //   // })
-  // }
+    $('#exampleModal').modal({ show: true });
+  }
 
   ngOnInit() {
   }
