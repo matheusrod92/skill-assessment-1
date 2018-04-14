@@ -1,0 +1,35 @@
+<nav class="navbar custom-navbar navbar-fixed-top cor" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <img src="/mvp/src/assets/logo_hr_recruta_bco.png">
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <a href="#" class="cor-fonte">Contato</a>
+      </li>
+      <li>
+        <button type="button" class="btn btn-default navbar-btn cor-fonte" data-toggle="modal" data-target="#exampleModal" (click)="mostraFormLogin()"> Login </button>
+      </li>
+      <!-- implementar o Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+  </div>
+</nav>

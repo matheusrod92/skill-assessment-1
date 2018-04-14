@@ -16,12 +16,14 @@ import { AuthService } from './services/auth.service';
 import { AuthGuard } from 'app/services/auth-guard.service';
 
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './views/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
