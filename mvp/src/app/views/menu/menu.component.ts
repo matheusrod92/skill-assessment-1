@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery'; 
+import 'bootstrap';
+// import * as $ from 'jquery/dist/jquery.min.js';
 
 @Component({
   selector: 'app-menu',
@@ -10,10 +12,10 @@ export class MenuComponent implements OnInit {
 
   constructor() { }
 
-  mostraFormLogin() {
+  mostraFormLogin(e) {
   //to-do: fazer o js funcionar para mostar o modal
-    
-    $('#exampleModal').modal({ show: true });
+    // e.preventDefault();
+    $('#exampleModal').modal('show');
   }
 
   ngOnInit() {

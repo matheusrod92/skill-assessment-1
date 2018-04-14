@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './views/login/login.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 
-import { environment } from '../environments/environment'
-import { AngularFireModule } from 'angularfire2'
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
@@ -17,6 +17,7 @@ import { AuthGuard } from 'app/services/auth-guard.service';
 
 import { FormsModule } from '@angular/forms';
 import { MenuComponent } from './views/menu/menu.component';
+
 
 @NgModule({
   declarations: [
